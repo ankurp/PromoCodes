@@ -1,0 +1,2 @@
+class PromocodeNotStarted < InvalidPromocode
+end

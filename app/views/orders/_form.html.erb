@@ -1,0 +1,17 @@
+<%= form_for(order) do |f| %>
+  <%= render @order.items %>
+
+  <div class="field">
+    <strong>Total Price:</strong> <%= number_to_currency(@order.price) %>
+  </div>
+
+  <div>
+    Promocode:
+    <input id="promocode" value="<%= @order.promocode.code %>" />
+    <%= link_to "Apply", new_order_path, class: "promocode-link" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class PromocodeExpired < InvalidPromocode
+end
