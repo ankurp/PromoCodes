@@ -1,24 +1,10 @@
-# README
+# Getting Started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. `bundle`
+2. `rake db:migrate`
+3. `rake db:seed`
+4. `rails s` and go to `localhost:3000`
 
-Things you may want to cover:
+## How it works
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You will get redirect to `/orders/new`. Here there are two items that are being purchased. Adding a promo code that works such as `FIFTY` or `$10OFF` and clicking `Apply` will remove 50% of the total or remove $10 respectively.
